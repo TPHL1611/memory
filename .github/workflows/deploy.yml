@@ -1,0 +1,38 @@
+name: Deploy React App to GitHub Pages
+
+# Chạy khi có push lên branch main
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            # 1. Checkout code
+            - name: Checkout repository
+              uses: actions/checkout@v3
+
+            # 2. Cài Node.js
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: "18" # hoặc version bạn muốn
+                  cache: "npm"
+
+            # 3. Cài dependencies
+            - name: Install dependencies
+              run: npm ci
+
+            # 4. Build
+            - name: Build project
+              run: npm run build
+
+            # 5. Deploy lên branch gh-pages
+            - name: Deploy to GitHub Pages
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                  branch: gh-pages # branch sẽ chứa file tĩnh
+                  folder: build # thư mục chứa kết quả build
+                  clean: true # xóa hết file cũ trước khi deploy
