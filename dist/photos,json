@@ -1,0 +1,25 @@
+{
+    "photos": [
+        {
+            "imageId": "1AbCdEfG123456789",
+            "title": "Kỷ niệm đầu tiên",
+            "date": "15/01/2023",
+            "type": "gdrive",
+            "description": "Lần đầu tiên gặp nhau"
+        },
+        {
+            "imageId": "Auvvjz7swiyYmZEuIu4QNkYdIYw85Q?e=tOvm7u",
+            "title": "Chuyến đi chơi",
+            "date": "22/03/2023",
+            "type": "onedrive",
+            "description": "Chuyến đi Đà Lạt đầu tiên"
+        },
+        {
+            "imageId": "SnTy8HSdStwZGLog7",
+            "title": "Ngày lễ tình nhân",
+            "date": "14/02/2023",
+            "type": "gphotos",
+            "description": "Valentine đầu tiên của chúng mình"
+        }
+    ]
+}
