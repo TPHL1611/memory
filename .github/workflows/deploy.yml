@@ -34,5 +34,5 @@ jobs:
               uses: JamesIves/github-pages-deploy-action@v4
               with:
                   branch: gh-pages # branch sẽ chứa file tĩnh
-                  folder: build # thư mục chứa kết quả build
+                  folder: dist # thư mục chứa kết quả build
                   clean: true # xóa hết file cũ trước khi deploy
